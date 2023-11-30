@@ -12,7 +12,7 @@ function enterkeypress(event)
 {
     if(event.key==="Enter")
     {
-        c.innerHTML=a.value+"<br>";
+        c.innerHTML="phone number : "+a.value+"<br>";
         displayMessage();
     }
 }
@@ -21,7 +21,7 @@ async function delay(sec)
     return new Promise((resolve,reject)=>{
         setTimeout(() => {
             resolve(true);
-        },sec*1);
+        },sec*10);
     });
 }
 async function percentage(sec)
@@ -78,7 +78,7 @@ async function displayMessage()
     }
     else
     {
-        percentage(2);
+        await percentage(5)
         c.innerHTML=c.innerHTML+"unable to access"+"<br>";
     }
 }
