@@ -1,0 +1,16 @@
+body
+{
+    background-color: black;
+    color: rgb(19, 146, 31);
+}
+#input
+{
+    width: 100px;
+    background: transparent;
+    border: none;
+    color:rgb(13, 173, 13);
+}
+.insta
+{
+    display: none;
+}
