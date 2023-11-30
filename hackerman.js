@@ -67,9 +67,9 @@ async function displayMessage()
         for(let i=0;i<message.length;i++)
         {
             if(i==13||i==15||i==19)
-                await percentage(15);
+                await percentage(6);
             else
-                await percentage(1);
+                await percentage(2);
             c.innerHTML=c.innerHTML+message[i]+"<br>";
         }
         e.style.display="block";
